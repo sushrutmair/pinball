@@ -141,3 +141,21 @@ Here is the same image without annotations, for an uncluttered look:
 Do excuse the rat’s nest of wires as it’s a prototype! While it looks rickety, it played well enough to finalize the design. Everything worked as expected, more or less, and some learning’s that were found in the 1st prototype applied here too.
 
 ### Game program logic:
+
+The full source code is available [here](https://github.com/sushrutmair/pinball/blob/master/pinball_v0.ino) but the logic flow is explained here via a flowchart.
+
+The main loop (method GameLoop() in the code):
+
+<p align="center">
+  <img width="600" height="150" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/gm_flow.jpg">
+</p>
+
+-	Manage triggered vibration sensors – all the 4 vibrations sensors (3 targets and 1 ball drop), are hooked up to the external hardware interrupts of the Mega 2560. Whenever they register a hit, a flag is set for eventual perusal from this function. For the targets, if the flag is set, a hit is counted, points are incremented and the points are updated. Also, the speaker sounds an increment tone and the LED strips flashes the relevant LED’s (blue) aligned to the relevant target. In case of the ball drop, everything as above is repeated except points don’t change and the number of balls available is reduced by one
+
+-	Manage laser – the laser periodically turns on for a set amount of time (5 seconds). It does this multiple times in a game. When the laser is on, the receiver (LDR) registers the laser on it and the analog IN of the Mega 2560 monitors that. If the ball crosses the laser beam when it is on, the Mega detects it via the voltage change on its analog IN pin. This is counted as a point decrement and the points are updated. Also, the speaker sounds an decrement tone and the LED strips flashes the relevant LED’s (red) aligned to the relevant target
+
+-	Update LCD – self-explanatory. Updated the LCD to reflect the current points, time elapsed in seconds and balls remaining
+
+-	State Management (other state) – controls the extra ball release. The ball is released randomly between 15 to 75 seconds of the game. Each iteration of the game, the release time is different. It is calculated at game initialization time and this function merely checks if it is time to release it
+
+There is a lot of other code too and the Setup() method is the one calling that other code. It should be more or less easy to understand but drop me a note if you need something clarified.
