@@ -97,6 +97,12 @@ The plunger design was made using a 25 ml syringe. The piston was anchored to th
 This completes familiarizing ourselves with the unknown components and we went on to build out the full game board for the 2nd prototype. Here is the design for it:
 
 <p align="center">
-  <img width="450" height="675" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_cdbd1.jpg">
+  <img width="615" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_cdbd1.jpg">
+</p>
+
+To understand what electronic components were used, here is another image overlaying only the electronic components on top of the above image:
+
+<p align="center">
+  <img width="615" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_cdbd2.jpg">
 </p>
 
