@@ -159,3 +159,11 @@ The main loop (method GameLoop() in the code):
 -	State Management (other state) – controls the extra ball release. The ball is released randomly between 15 to 75 seconds of the game. Each iteration of the game, the release time is different. It is calculated at game initialization time and this function merely checks if it is time to release it
 
 There is a lot of other code too and the Setup() method is the one calling that other code. It should be more or less easy to understand but drop me a note if you need something clarified.
+
+### Final prototype:
+
+Based on all of the above, the final version was created and is shown here. A video of the game play follows below that.
+
+<p align="center">
+  <img width="600" height="400" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/fin_pro.jpg">
+</p>
