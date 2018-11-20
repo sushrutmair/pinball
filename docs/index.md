@@ -131,3 +131,13 @@ Before we actually delve into the game logic here is the 2nd prototype image
 <p align="center">
   <img width="575" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_complete.jpg">
 </p>
+
+Here is the same image without annotations, for an uncluttered look:
+
+<p align="center">
+  <img width="575" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_complete_no_annot.jpg">
+</p>
+
+Do excuse the rat’s nest of wires as it’s a prototype! While it looks rickety, it played well enough to finalize the design. Everything worked as expected, more or less, and some learning’s that were found in the 1st prototype applied here too.
+
+### Game program logic:
