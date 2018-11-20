@@ -1,6 +1,6 @@
 ## Pinball!
 
-This post goes into details of how a (mini) pinball game was conceptualized, designed and prototyped. It is not the size of a regular pinball table but is rather a tabletop pinball game. The game utilizes multiple sensors, motors and is interactive. Game stats are communicated via an LCD screen and speaker. The whole game is driven by a single Arduino Mega 2560 R3. I had created this for my 11 year son and luckily it became hugely popular among his friends (and also some grown-ups!).
+This post goes into details of how a (mini) pinball game was conceptualized, designed and prototyped. It is not the size of a regular pinball table but is rather a tabletop pinball game. One of the key differences from other such projects is that this build utilizes standard sensors and actuators for game play and does not rely on actual pinball parts at all. The game utilizes multiple sensors, motors and is interactive. Game stats are communicated via an LCD screen and speaker. The whole game is driven by a single Arduino Mega 2560 R3. I had created this for my 11 year son and luckily it became hugely popular among his friends (and also some grown-ups!).
 
 ### Conceptualization:
 
@@ -106,3 +106,28 @@ To understand what electronic components were used, here is another image overla
   <img width="615" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_cdbd2.jpg">
 </p>
 
+At this point it would be good to take a detour into the game logic. We have all the mechanical and electronic elements in place and now need to form rules for the game play. Here they are:
+
+-	A game runs for 90 seconds or all balls are lost, whichever occurs first. A player gets 3 balls at start to play with (one by one)
+
+-	A target hit nets points. The points incremented are somewhat different for some targets as they are a little harder to hit accurately
+
+-	During game play, an extra ball would be released randomly at any point in time. The player thus, gets a total of 4 balls to play in each game. An extra ball release event also nets bonus points
+
+-	A ball drop is detected in the drain and that decrements the balls available per detection
+
+-	Multiple times in a game, the laser turns on and if the ball passes through the beam, it is detected and points are decremented
+
+Also,
+
+-	Game score, time remaining and balls remaining are displayed on the LCD
+
+-	The speaker plays a game start tone when the game begins and plays a tone for point increment or decrement (each different)
+
+-	For each point increment and decrement the relevant LED’s in the WS2812B strip light up briefly as a visual indication. A number of lights also light up when a ball is lost (drain)
+
+Before we actually delve into the game logic here is the 2nd prototype image
+
+<p align="center">
+  <img width="575" height="625" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/pro2_complete.jpg">
+</p>
