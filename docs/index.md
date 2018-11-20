@@ -14,9 +14,57 @@ Post this initial working idea, we immediately shifted to an A4 sized paper for 
 
 Design:
 
-After this point we felt confident we had enough cohesive elements to start a little more advanced prototyping. We decided to make it with as simple materials as we could, allowing for fast iterations but at the same time give us a decent idea of game play experience. The result was this:
+After a few paper designs we felt confident we had enough cohesive elements to start a little more advanced prototyping. We decided to make it with as simple materials as we could, allowing for fast iterations but at the same time give us a decent idea of game play experience. The result was this:
 
 <p align="center">
   <img width="675" height="450" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/design1.jpg">
 </p>
+
+The whole thing had been held together by hot glue, nails/screws (rebound rubber) and children’s clay dough. The intent was to build something that can be ‘played’ so as to get a good idea of key game mechanics like:
+
+-	Is the game board slope good? Does the ball roll forward always and with manageable speed? Too fast and the game becomes too hard to play. Too slow may take away from randomness in the game
+
+-	Are there dead zones in the board? That is, does the ball stop and be stationary at any part of the board? This is not something that should be allowed, obviously
+
+-	Is it possible to hit all the elements in the game? Does the ball ‘treat’ all elements as equals? We don’t want the ball to monopolize one or a few elements
+
+-	Are the flipper angles good? Is the space between the flippers good?
+
+-	Is the drain position good?
+
+-	Does the ball bounce satisfactorily from the rebound rubber? I had tried different materials for rebound rubbers – standard elastic rope - the kind used in clothes wear, natural latex rubber string and a kind of stretchable sewing thread (almost an elastic nylon string)
+
+A quick guide to the game elements:
+
+-	Flippers – used to launch the ball back into play up the game board, ideally never allowing it to fall into the drain
+
+-	Plunger – launches the ball at start of play or when a new ball comes into play
+
+-	Drain – where the ball goes to die (!), that is, it goes out of play. Usually, players have limited number of balls to play
+
+-	Laser transmitter/receiver – this would cut horizontally across the board during play and if the ball crossed into the beam, player would lose points
+
+-	Tunnel – a sort of speed breaker that would ensure maximum contact with the laser if the player is out of luck. Also works as a brake for the extra ball
+
+-	Extra ball – at some point in the game, an extra ball is released into the game allowing the player to score more
+
+-	Rebound rubber – works as a randomizer in the game. Once the ball hits the rebound rubber, it can go anywhere and thus injects more variability in the play
+
+-	Towers – the targets. Hitting them gives points to the players
+
+-	Ball blower – A fan or similar that can hit the ball and throw it randomly across the game board. In the final version, we did away with this as it took up too much space and the motor we needed injected too many vibrations on the board
+
+The primary game objective is to score as many points as possible until either time runs out or you run out if balls to play.
+
+Coming back to the prototype board above, once we started playing with it for a couple of days, we learnt quite a few things:
+
+-	Rebound rubber was best with the stretchable nylon sewing thread
+
+-	Flippers must be anchored at the proper angles else they may not have enough leverage to hit the ball with required force
+
+-	The housing of the various elements must be placed properly to avoid dead areas
+
+-	The towers need to be at the far end wall rather than where they were in this prototype so that they do not obstruct the ‘flow’ of the ball around the game board
+
+-	The blower was taking up too much space
 
