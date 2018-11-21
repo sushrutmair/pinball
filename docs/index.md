@@ -165,7 +165,7 @@ There is a lot of other code too and the Setup() method is the one calling that 
 Based on all of the above, the final version was created and is shown here. A video of the game play follows below that.
 
 <p align="center">
-  <img width="600" height="400" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/fin_pro.jpg">
+  <img width="800" height="600" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/fin_pro.jpg">
 </p>
 
 ### Video - TBD
@@ -188,7 +188,13 @@ As can be seen, some placements have been changed and a clear theme is present. 
  
  - Close up of laser transmitter, plunger and rebound rubbers:
  
+ <p align="center">
+  <img width="200" height="400" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/lsr_xmt_pln_rr.jpg">
+ </p>
+ 
  - Close up of flippers, drain and rebound rubbers:
+ 
+ 
  
  - Close up of targets, with springs to mount them on them on the vibration sensors:
  
