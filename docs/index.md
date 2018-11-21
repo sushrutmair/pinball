@@ -194,9 +194,16 @@ As can be seen, some placements have been changed and a clear theme is present. 
  
  - Close up of flippers, drain and rebound rubbers:
  
- 
+ <p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/flp_drn_rr.jpg">
+ </p>
  
  - Close up of targets, with springs to mount them on them on the vibration sensors:
+ 
+ 
+ <p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/tgt_up.jpg">
+ </p>
  
  - The image below shows the underside of the game board, where the vibration sensors have been fixed:
  
