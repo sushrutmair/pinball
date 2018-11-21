@@ -168,11 +168,11 @@ Based on all of the above, the final version was created and is shown here. A vi
   <img width="800" height="600" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/fin_pro.jpg">
 </p>
 
-### Video - TBD
+#### Video - TBD
 
 As can be seen, some placements have been changed and a clear theme is present. Based on my son’s preferences, we decided on a Batman theme. The targets (backed by vibration sensors) are Batman villains like Bane, Scarecrow and the Joker (hitting these increment points). The laser is El Diablo (decrement points as you are hit by his fire). The main ball is the Batman spray painted black. The extra ball is designated as the Batmobile and the tunnel is the Batcave. Apart from these, there are some images that have been glued to the game board to give a complete theme feel.
 
-### Here are some more pictures of the game with short descriptions to explain better:
+#### Here are some more pictures of the game with short descriptions to explain better:
 
  - Close up of the Game controller box and the LCD:
  
@@ -199,19 +199,26 @@ As can be seen, some placements have been changed and a clear theme is present. 
  </p>
  
  - Close up of targets, with springs to mount them on them on the vibration sensors:
- 
- 
+  
  <p align="center">
   <img width="450" height="300" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/tgt_up.jpg">
  </p>
  
  - The image below shows the underside of the game board, where the vibration sensors have been fixed:
  
- - An image that shows the open game controller box and the mess of wires. Try debugging a loose connection here! (I love pointless challenges!!):
-
- - In game score lcd pic:
+  <p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/tgt_under.jpg">
+  </p>
  
- - Game over lcd pic:
+ - An image that shows the open game controller box and the mess of wires. Try debugging a loose connection here! (I love pointless challenges!!):
+ 
+ <p align="center">
+  <img width="450" height="300" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/rats_nest.jpg">
+ </p>
+
+ - In game score lcd pic: TBD
+ 
+ - Game over lcd pic: TBD
  
  ### Challenges:
  
