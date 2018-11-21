@@ -167,3 +167,53 @@ Based on all of the above, the final version was created and is shown here. A vi
 <p align="center">
   <img width="600" height="400" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/fin_pro.jpg">
 </p>
+
+### Video - TBD
+
+As can be seen, some placements have been changed and a clear theme is present. Based on my son’s preferences, we decided on a Batman theme. The targets (backed by vibration sensors) are Batman villains like Bane, Scarecrow and the Joker (hitting these increment points). The laser is El Diablo (decrement points as you are hit by his fire). The main ball is the Batman spray painted black. The extra ball is designated as the Batmobile and the tunnel is the Batcave. Apart from these, there are some images that have been glued to the game board to give a complete theme feel.
+
+### Here are some more pictures of the game with annotations to explain better:
+
+ - Close up of the Game controller box and the LCD:
+ 
+ - Close up of laser receiver (LDR), the tunnel and extra ball release mechanism:
+ 
+ - Close up of laser transmitter, plunger and rebound rubbers:
+ 
+ - Close up of flippers, drain and rebound rubbers:
+ 
+ - Close up of targets, with springs to mount them on them on the vibration sensors:
+ 
+ - The image below shows the underside of the game board, where the vibration sensors have been fixed:
+ 
+ - An image that shows the open game controller box and the mess of wires. Try debugging a loose connection here! (I love pointless challenges!!):
+
+ - In game score lcd pic:
+ 
+ - Game over lcd pic:
+ 
+ ### Challenges:
+ 
+I would also like to discuss some challenges that this project threw up and what I did to meet them.
+
+-	Power supply – the game has a few components that cannot be powered directly through the Mega. The reason for this is their current draw which is usually (on average) more than what the Mega can source. As a side note, always be aware of the current draw of your components and circuit as a whole. Coming back, these components are: the motor fixed for the extra ball release (> 1000 mA at times), the LED strip (up to 1800 mA at full brightness), the speaker (~180 mA) and the LCD screen (~150 mA). Except the speaker, all run at 5V (speaker runs at 3.3V). I purchased one DC +5V 3A power supply adapter and another DC 12V 2A, both of which could directly plug into an AC wall wart (240 VAC, 50 Hz). The LED strip and motor consumed the 5V 3A while the rest consumed the other (via a DC power module that gave me multiple outs of 3.3V and 5V). Of course, everything was tied to a common ground plane. If I had the budget, I would probably go for a SMPS supply that would ensure a single wall wart plug instead of the two I had now. I also had the LED strip dialed down to low brightness which was enough for my conditions.
+
+-	Vibration sensor sensitivity – there was one change that I made from the 2nd prototype to the final prototype which cost me a lot of time. The 2nd prototype game board was made up of particle board while the final one was made up acrylic. I decided on acrylic because I wanted to stick the game theme stickers underneath the board so that they would be fuzzily visible when playing and give a nice effect. The acrylic was also easier to paint and cut. However, I figured out (after much experimentation and testing) that the acrylic was much more sensitive to vibrations and conducts vibrations much better than wood. Every time I would flex the flippers, the vibration sensors on the targets at the far end and the drain beside the flippers would register a hit. This was because the sensors were mounted beneath the acrylic game board and poked through a tight fitting hole on the board onto the play area. This was a show stopper. After much head banging and help from my better half, we decided to mount the target’s vibration sensors on L shaped brackets fixed to the base board instead of the acrylic. We also increased the diameter of the holes through which the vibrations sensors poked through the game board so that they would not touch the acrylic board in any way. This worked well and fixed the issue. We fixed the drain too to the base board not allowing it to touch the acrylic game board in any manner.
+
+-	Extra ball release shaft angle – this was not a biggie like the other two but important enough to ensure that I measure the angle at which the ball would rest against the shaft and not come out. The angle at which the ball would freely roll out was also important.
+
+### Improvements:
+
+Also, there are quite a few improvements I would like to get in someday.
+
+-	Demo mode, game start button – the game is currently started by resetting the Mega. I plan to add a game start button and while the game is not playing, a demo mode that would have some nice sound n light show
+
+-	Better packaging / look – the current packaging and finish of the game is just about passable. I would like to refine it
+
+-	LED strip below game board to provide ambience to the game
+
+-	Move laser LDR to pin change interrupt – Currently the LDR analog values are checked in the main loop (called from GameLoop() ). However this slows down the loop end to end time and leaves very little scope for adding further logic. I would want to try out moving the LDR detection to a pin change interrupt to mitigate this
+
+-	Add adaptive gameplay – since this is primarily a game of skill with some element of luck thrown in, it would make sense for the game to adapt to the players. For e.g., good players should see increasingly difficult gameplay and vice-versa. All this is possible by maintaining a player profile or a simpler version that just reacts to the current game in progress
+
+I hope this was interesting to readers. We had great fun making it and watching players’ faces light up when playing! If you have any questions please drop me a message!
