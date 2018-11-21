@@ -172,11 +172,19 @@ Based on all of the above, the final version was created and is shown here. A vi
 
 As can be seen, some placements have been changed and a clear theme is present. Based on my son’s preferences, we decided on a Batman theme. The targets (backed by vibration sensors) are Batman villains like Bane, Scarecrow and the Joker (hitting these increment points). The laser is El Diablo (decrement points as you are hit by his fire). The main ball is the Batman spray painted black. The extra ball is designated as the Batmobile and the tunnel is the Batcave. Apart from these, there are some images that have been glued to the game board to give a complete theme feel.
 
-### Here are some more pictures of the game with annotations to explain better:
+### Here are some more pictures of the game with short descriptions to explain better:
 
  - Close up of the Game controller box and the LCD:
  
+ <p align="center">
+  <img width="200" height="500" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/cnt_box_lcd.jpg">
+ </p>
+ 
  - Close up of laser receiver (LDR), the tunnel and extra ball release mechanism:
+ 
+ <p align="center">
+  <img width="200" height="425" src="https://raw.githubusercontent.com/sushrutmair/pinball/master/assets/lsr_rcv_tn.jpg">
+ </p>
  
  - Close up of laser transmitter, plunger and rebound rubbers:
  
