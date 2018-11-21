@@ -220,7 +220,8 @@ As can be seen, some placements have been changed and a clear theme is present. 
  
  - Game over lcd pic: TBD
  
- ### Challenges:
+ 
+### Challenges:
  
 I would also like to discuss some challenges that this project threw up and what I did to meet them.
 
